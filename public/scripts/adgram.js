@@ -1,5 +1,5 @@
 // insert your block id
-const AdController = window.Adsgram.init({ blockId: "4055" });
+const AdController = window.Adsgram.init({ blockId: "4092" });
 const button = document.getElementById('ad');
 button.addEventListener('click', () => {
   AdController.show().then((result) => {
