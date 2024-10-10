@@ -1,6 +1,8 @@
 extends layout
 block style
       link(rel='stylesheet', href='/stylesheets/style.css')
+block app
+  script(src="https://sad.adsgram.ai/js/sad.min.js")
 block content
   nav 
     .profile 
@@ -36,3 +38,6 @@ block content
                 img(src="/images/Arrow - Up.svg", alt="price state")
               p.up 232.5%
             p.fade Last 7 day
+  button#ad show ads
+block script
+  script(src="/scripts/adgram.js")
