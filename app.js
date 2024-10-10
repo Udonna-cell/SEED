@@ -38,4 +38,10 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+app.all("/myapp", (req, res)=>{
+  console.log("new user here");
+})
+
+
+
 module.exports = app;
