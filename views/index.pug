@@ -1,6 +1,7 @@
 extends layout
 block style
       link(rel='stylesheet', href='/stylesheets/style.css')
+      link(rel='stylesheet', href='/stylesheets/nav.css')
 block app
   script(src="https://sad.adsgram.ai/js/sad.min.js")
 block content
@@ -39,5 +40,7 @@ block content
               p.up 232.5%
             p.fade Last 7 day
   button#ad show ads
+block nav
+  include ./nav.pug
 block script
   script(src="/scripts/adgram.js")
